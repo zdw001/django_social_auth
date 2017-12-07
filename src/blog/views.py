@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.utils import timezone
-from .models import Post
+from .models import Post, Profile
 from .forms import PostForm
+from django.conf import settings
 
 @login_required
 def index(request):
