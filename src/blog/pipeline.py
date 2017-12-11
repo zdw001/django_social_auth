@@ -1,7 +1,8 @@
 from .models import Profile
+from pprint import pprint
 
 def show_response(backend, user, response, *args, **kwargs):
-    print(response)
+    pprint(response)
 
 def save_profile(backend, user, response, *args, **kwargs):
 
